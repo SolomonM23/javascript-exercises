@@ -1,10 +1,18 @@
 const repeatString = function(string, num) {
+    let value = string;
+    let count = num;
 
-    for (let i = 1; i <= num; i++){
-        return string.repeat(num);
-    }
-};
+        if (count <= -1){
+            return 'ERROR';    
+        } else if (count === 0){
+            return '';
+        } else if (count !== 0){
+            return value.repeat(num);
+        }
+}
 
-repeatString('hey', 3);
+console.log(repeatString('hey', -1));
+// repeatString('hey', 5)
+
 // Do not edit below this line
-// module.exports = repeatString;
+module.exports = repeatString;
