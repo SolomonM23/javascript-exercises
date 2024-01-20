@@ -2,9 +2,13 @@ const sumAll = function(a,b) {
 
     let sum = 0;
 
-    if ( !(a > 0) || !(b > 0)) { //returns error for negative numbers
+    if ( !(a > 0) || !(b > 0)) { //parameters are negative numbers
         return 'ERROR';
     }
+
+    if (typeof a, typeof b !== "number"){ //parameters aren't numbers 
+        return 'ERROR';
+    } 
 
     if (a > b){
         for (let i = b; i <= a; i++){
