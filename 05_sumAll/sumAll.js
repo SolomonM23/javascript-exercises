@@ -2,7 +2,7 @@ const sumAll = function(a,b) {
 
     let sum = 0;
 
-    if ( ! a > 0 || ! b > 0) {
+    if ( !(a > 0) || !(b > 0)) { //returns error for negative numbers
         return 'ERROR';
     }
 
